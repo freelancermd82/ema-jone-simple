@@ -59,13 +59,13 @@ const Shop = () => {
         setCart(newCart);
         addToDb(product.id);
     }
-
+ 
     return (
         <div className='shop-container'>
             <div className="products-container">
                 {
                     products.map(product => <Product
-                        key={product.id}
+                        key={product.id}  
                         product={product}
                         handleAddToCart={handleAddToCart}
                     ></Product>)
